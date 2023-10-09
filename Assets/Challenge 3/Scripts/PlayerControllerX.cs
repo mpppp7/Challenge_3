@@ -72,7 +72,7 @@ public class PlayerControllerX : MonoBehaviour
 
         {
             playerAudio.PlayOneShot(moneySound, 1.0f);
-            playerRb.AddForce(Vector3.up * floatForce);
+            playerRb.AddForce(Vector3.up * 5, ForceMode.Impulse);
         }
     }
 
